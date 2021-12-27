@@ -27,10 +27,10 @@ The decryption process follows the same as encryption in reverse pattern
 
 ex:
 suppose the plain text is '!#{/&'
->>start      : '!#{/o'    ->  last character replaced with acsii(&) - ascii(!) = o [decryption started from end]
->>iteration 1: '!#{lo'    ->  ascii(/) + ascii(&) = 'l'
->>iteration 2: '!#llo'    ->  ascii({) + ascii(/) = 'l'
->>iteration 3: '!ello'    ->  ascii(#) + ascii({) = 'e'
->>iteration 4: 'hello'    ->  ascii(!) + ascii(#) = 'h'
+>>start      : '!#{/o'    ->  last character replaced with acsii(&) - ascii(!) = o [decryption started from end]<br>
+>>iteration 1: '!#{lo'    ->  ascii(/) + ascii(&) = 'l'<br>
+>>iteration 2: '!#llo'    ->  ascii({) + ascii(/) = 'l'<br>
+>>iteration 3: '!ello'    ->  ascii(#) + ascii({) = 'e'<br>
+>>iteration 4: 'hello'    ->  ascii(!) + ascii(#) = 'h'<br>
 
 so the decrypted string is 'hello'
