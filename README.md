@@ -3,7 +3,7 @@
 The python program is for encryption and decryption of plain text
 The algorithm use is as:
 
-# Encryption
+Encryption
 
 Here we will add the ascii values of the last 2 character of the string
 then the resultant ascii value's equivalent character(special character) is added to the start of the resultant string
@@ -20,9 +20,9 @@ iteration 3: '{/oh#'    ->  ascii({) + ascii(e) = '#'
 iteration 4: '#{/o!'    ->  ascii(#) + ascii(h) = '!'
 finally    : '!#{/&'    ->  ascii(!) + ascii(o) = '&'
 
-# so the finaly encrypted string is '!#{/&'
+so the finaly encrypted string is '!#{/&'
 
-# Decryption
+Decryption
 The decryption process follows the same as encryption in reverse pattern
 
 ex:
@@ -33,4 +33,4 @@ iteration 2: '!#llo'    ->  ascii({) + ascii(/) = 'l'
 iteration 3: '!ello'    ->  ascii(#) + ascii({) = 'e'
 iteration 4: 'hello'    ->  ascii(!) + ascii(#) = 'h'
 
-# so the decrypted string is 'hello'
+so the decrypted string is 'hello'
