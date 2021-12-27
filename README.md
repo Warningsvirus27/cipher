@@ -13,12 +13,12 @@ Hence we will get the fully encrypted string
 
 ex:
 suppose the plain text is 'hello'
-start      : 'ohello'   ->  last character appended at the start
-iteration 1: 'ohel/'    ->  ascii(o) + ascii(l) = '/'
-iteration 2: '/ohe{'    ->  ascii(/) + ascii(l) = '{'
-iteration 3: '{/oh#'    ->  ascii({) + ascii(e) = '#'
-iteration 4: '#{/o!'    ->  ascii(#) + ascii(h) = '!'
-finally    : '!#{/&'    ->  ascii(!) + ascii(o) = '&'
+>>start      : 'ohello'   ->  last character appended at the start
+>>iteration 1: 'ohel/'    ->  ascii(o) + ascii(l) = '/'
+>>iteration 2: '/ohe{'    ->  ascii(/) + ascii(l) = '{'
+>>iteration 3: '{/oh#'    ->  ascii({) + ascii(e) = '#'
+>>iteration 4: '#{/o!'    ->  ascii(#) + ascii(h) = '!'
+>>finally    : '!#{/&'    ->  ascii(!) + ascii(o) = '&'
 
 so the finaly encrypted string is '!#{/&'
 
@@ -27,10 +27,10 @@ The decryption process follows the same as encryption in reverse pattern
 
 ex:
 suppose the plain text is '!#{/&'
-start      : '!#{/o'    ->  last character replaced with acsii(&) - ascii(!) = o [decryption started from end]
-iteration 1: '!#{lo'    ->  ascii(/) + ascii(&) = 'l'
-iteration 2: '!#llo'    ->  ascii({) + ascii(/) = 'l'
-iteration 3: '!ello'    ->  ascii(#) + ascii({) = 'e'
-iteration 4: 'hello'    ->  ascii(!) + ascii(#) = 'h'
+>>start      : '!#{/o'    ->  last character replaced with acsii(&) - ascii(!) = o [decryption started from end]
+>>iteration 1: '!#{lo'    ->  ascii(/) + ascii(&) = 'l'
+>>iteration 2: '!#llo'    ->  ascii({) + ascii(/) = 'l'
+>>iteration 3: '!ello'    ->  ascii(#) + ascii({) = 'e'
+>>iteration 4: 'hello'    ->  ascii(!) + ascii(#) = 'h'
 
 so the decrypted string is 'hello'
