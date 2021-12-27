@@ -13,12 +13,12 @@ Hence we will get the fully encrypted string
 
 ex:
 suppose the plain text is 'hello'
->>start      : 'ohello'   ->  last character appended at the start
->>iteration 1: 'ohel/'    ->  ascii(o) + ascii(l) = '/'
->>iteration 2: '/ohe{'    ->  ascii(/) + ascii(l) = '{'
->>iteration 3: '{/oh#'    ->  ascii({) + ascii(e) = '#'
->>iteration 4: '#{/o!'    ->  ascii(#) + ascii(h) = '!'
->>finally    : '!#{/&'    ->  ascii(!) + ascii(o) = '&'
+start      : 'ohello'   ->  last character appended at the start<br>
+iteration 1: 'ohel/'    ->  ascii(o) + ascii(l) = '/'<br>
+iteration 2: '/ohe{'    ->  ascii(/) + ascii(l) = '{'<br>
+iteration 3: '{/oh#'    ->  ascii({) + ascii(e) = '#'<br>
+iteration 4: '#{/o!'    ->  ascii(#) + ascii(h) = '!'<br>
+finally    : '!#{/&'    ->  ascii(!) + ascii(o) = '&'<br>
 
 so the finaly encrypted string is '!#{/&'
 
